@@ -19,7 +19,7 @@ public class Main {
 	       		if((soma / qtd_prova) >= 6) {
 	           		System.out.println("Parabéns Aprovado!");
 	       		} else {
-	           	System.out.println("Você foi Reprovado!");
+	           		System.out.println("Você foi Reprovado!");
 	       		}
 	   	}
 	}
