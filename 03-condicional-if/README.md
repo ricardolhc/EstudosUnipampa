@@ -14,7 +14,7 @@ N1 = 4
 <br>
 N2 = 6
 <br>
-Saída: Maior = 6 Menor =4
+Saída: Maior = 6 Menor = 4
 
 ### [Exercício 2](./exercicio_02.java)
 Faça um programa que leia três notas, calcule a média entre elas e verifique a situação do aluno na tabela abaixo. Ao final o programa deve apresentar ao usuário a seguinte mensagem: media = x : situação.
