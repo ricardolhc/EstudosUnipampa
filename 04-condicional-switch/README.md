@@ -18,7 +18,7 @@ Desenvolva, em Linguagem Java, um programa que solicite um número de 1 a 4 ao u
 Desenvolva, em Linguagem Java, um programa que solicite ao usuário o preço de um produto e o código relativo à forma de pagamento. De acordo com a tabela dada abaixo, deve ser aplicado o desconto especificado e o programa deve exibir o número de prestações e o valor de cada prestação a ser paga:
 
 |    Forma de Pagamento   | Código | Desconto em cada parcela |
-|:-----------------------:|:------:|--------------------------|
+|:-----------------------:|:------:|-------------------------:|
 | À vista (parcela única) |    1   |                      30% |
 | Em duas vezes           |    2   |                      20% |
 | Em três vezes           |    3   |                      10% |
