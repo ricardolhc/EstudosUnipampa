@@ -1,4 +1,4 @@
-# Lista de Exercícios: Estruturas Condicionais IF
+# Lista de Exercícios: Estrutura Condicional If
 
 ## Configuração
 A ferramenta online utilizada para esta atividade é o [GDB online].
