@@ -41,7 +41,11 @@ public class Main
 		                case 'c': case 'C':
 		                        System.out.print("Valor: ");
 		                        float deposito = entrada.nextFloat();
-		                        saldo += deposito;
+					if(deposito < 0) {
+		                            System.out.println("Depósito não pode negativo");
+		                        } else {
+		                            saldo += deposito;  
+		                        }
 		                        break;
 		           
 		                case 'd': case 'D':
