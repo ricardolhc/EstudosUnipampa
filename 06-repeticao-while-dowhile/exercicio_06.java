@@ -42,7 +42,7 @@ public class Main
 		                        System.out.print("Valor: ");
 		                        float deposito = entrada.nextFloat();
 					if(deposito < 0) {
-		                            System.out.println("Depósito não pode negativo");
+		                            System.out.println("Depósito não pode ser negativo");
 		                        } else {
 		                            saldo += deposito;  
 		                        }
