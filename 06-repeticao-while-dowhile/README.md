@@ -1,4 +1,4 @@
-# Lista de Exercícios: Estruturas de repetição do e do while
+# Lista de Exercícios: Estruturas de repetição while e do while
 
 ## Configuração
 A ferramenta online utilizada para esta atividade é o [GDB online].
