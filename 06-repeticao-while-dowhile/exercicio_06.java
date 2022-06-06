@@ -27,11 +27,15 @@ public class Main
 		                case 'b': case 'B':
 		                        System.out.print("Valor: ");
 		                        float saque = entrada.nextFloat();
-		                        if(!(saque > saldo)) {
-		                                saldo -= saque;
-		                        } else {
-		                                System.out.println("ERRO: O saque é maior do que o saldo!");
-		                        }
+					if(saque >= 0) {
+						if(!(saque > saldo)) {
+							saldo -= saque;
+						} else {
+							System.out.println("ERRO: O saque é maior do que o saldo!");
+						}
+					} else {
+						System.out.println("Saque não pode ser negativo!");
+					}
 		                        break;
 		           
 		                case 'c': case 'C':
