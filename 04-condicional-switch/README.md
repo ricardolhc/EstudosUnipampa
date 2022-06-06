@@ -1,4 +1,4 @@
-# Lista de Exercícios: Estruturas de repetição for
+# Lista de Exercícios: Estrutura Condicional Switch
 
 ## Configuração
 A ferramenta online utilizada para esta atividade é o [GDB online].
