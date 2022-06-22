@@ -3,6 +3,11 @@
 ## Configuração
 A ferramenta online utilizada para esta atividade é o [GDB online].
 
+## Autores
+* Ricardo Luiz Hentges Costa
+* Tales Schifelbein Soares
+* Erick Duarte Aurelio
+
 ## Enunciado
 Esta atividade prática deve ser realizada em grupos de três integrantes. Vale 10 pontos e
 tem peso igual a 20% na nota final do componente curricular Algoritmos e Programação
