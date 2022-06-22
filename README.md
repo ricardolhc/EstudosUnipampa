@@ -17,3 +17,5 @@ O repositório está dividido em pastas, onde cada pasta é abordado um novo ass
 ### [05. Repetição For](./05-repeticao-for)
 
 ### [06. Repetição While e Do While](./06-repeticao-while-dowhile)
+
+### [07. Trabalho em Grupo](./07-trabalho-em-grupo)
