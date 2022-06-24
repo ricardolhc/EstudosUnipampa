@@ -1,4 +1,4 @@
-# Lista de Exercícios: Algoritmos Sequenciais
+# Trabalho em grupo
 
 ## Configuração
 A ferramenta online utilizada para esta atividade é o [GDB online].
