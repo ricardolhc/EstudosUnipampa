@@ -17,7 +17,7 @@ public class Main
             gabarito[i] = entrada.nextLine();
         }
         
-        for(int i = 0; i < 2; i++) {
+        for(int i = 0; i < 10; i++) {
             System.out.print("Digite o nome do candidato " + (i + 1) + ": ");
             nome[i] = entrada.nextLine();
             
@@ -40,7 +40,7 @@ public class Main
             }
         }
         
-        for(int i = 0; i < 2; i++) {
+        for(int i = 0; i < 10; i++) {
             System.out.println("Nome: " + nome[i] + " Num. Inscricao: " + inscricao[i] + " Nota: " + pontuacao[i]);
         }
 
