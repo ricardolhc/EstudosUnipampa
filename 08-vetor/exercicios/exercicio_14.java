@@ -9,7 +9,7 @@ public class Main
 		String gabarito[] = new String[5];
 		
 		String nome[] = new String[10];
-		int inscricao[] = new int[10];
+		String inscricao[] = new String[10];
         int pontuacao[] = new int[10];
         
         for(int i = 0; i < 5; i++) {
@@ -22,9 +22,7 @@ public class Main
             nome[i] = entrada.nextLine();
             
             System.out.print("Digite o numero de inscricao do candidato " + (i + 1) + ": ");
-            inscricao[i] = entrada.nextInt();
-            
-            entrada.nextLine();
+            inscricao[i] = entrada.nextLine();
             
             String respotas[] = new String[5];
             for(int j = 0; j < 5; j++) {
