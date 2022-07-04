@@ -8,7 +8,7 @@ public class Main
 		
 		String [] nome = new String [qtd];
 		double [] provas = new double [3];
-		int [] matricula = new int [qtd];
+		String [] matricula = new String [qtd];
 		double [] media = new double [qtd];
 		
 		Scanner entrada = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Main
 		    nome[i] = entrada.nextLine();
 		    
 		    System.out.print("Digite sua matricula: ");
-		    matricula[i] = entrada.nextInt();
+		    matricula[i] = entrada.nextLine();
 		    
 		    for(int j = 0; j < 3; j++) {
 		        System.out.print("Digite a pontuacao da prova " + (j + 1) + ": ");
