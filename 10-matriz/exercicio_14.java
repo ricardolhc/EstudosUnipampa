@@ -33,6 +33,8 @@ public class Main
 		
 		System.out.println();
 		
+		int lucro_anual = 0;
+		
 		for(int i = 0; i < motores_produzidos.length; i++) {
 		    System.out.print("Mês " + (i + 1) + "   ");
 		    int custo_mes = 0;
@@ -46,8 +48,11 @@ public class Main
 		            }
 		        }
 		    }
+		    lucro_anual += lucro_mes;
 		    System.out.println("Custo: " + custo_mes + "   Lucro: " + lucro_mes);
 		}
+		
+		System.out.println("Lucro Anual: " + lucro_anual);
 		
 	}
 }
