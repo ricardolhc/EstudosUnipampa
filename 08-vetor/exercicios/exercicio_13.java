@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
+import javafx.scene.media.Media;
+
 public class Main
 {
 	public static void main(String[] args) {
 		
-		final int qtd = 10;
-		
-		String [] nome = new String [qtd];
+		String [] nome = new String [10];
 		double [] provas = new double [3];
-		String [] matricula = new String [qtd];
-		double [] media = new double [qtd];
+		String [] matricula = new String [nome.length];
+		double [] media = new double [media.length];
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		for(int i = 0; i < qtd; i++) {
+		for(int i = 0; i < matricula.length; i++) {
 		    System.out.print("Digite seu nome: ");
 		    nome[i] = entrada.nextLine();
 		    
@@ -41,7 +41,7 @@ public class Main
 		    int posMaiorNota = 0;
 		    double maiorNota = media[0];
 		    
-		    for(int i = 0; i < qtd; i++) {
+		    for(int i = 0; i < matricula.length; i++) {
 		        if(maiorNota < media[i]) {
 		            posMaiorNota = i;
 		            maiorNota = media[i];
