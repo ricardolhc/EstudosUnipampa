@@ -11,7 +11,7 @@ public class Main
 		
 		int valorEscolhido;
 		
-		for(int i = 0; i < 8; i++) {
+		for(int i = 0; i < vetorA.length; i++) {
 		    
 		    do {
 		        
@@ -34,10 +34,10 @@ public class Main
 		    vetorB[i] = numFatorial;
 		}
 		
-		for(int i = 0; i < 8; i++) {
+		for(int i = 0; i < vetorB.length; i++) {
 		    System.out.println("Valor: " + vetorA[i] + " Fatorial: " + vetorB[i]);
 		}
 		
-		
+		entrada.close();
 	}
 }

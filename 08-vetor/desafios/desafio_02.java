@@ -6,15 +6,15 @@ public class Main
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		int vetor[] = new int[qtd_numero];
+		int vetor[] = new int[10];
 		
-		for(int i = 0; i < qtd_numero; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + (i + 1) + " numero: ");
 		    vetor[i] = entrada.nextInt();
 		}
 		
-		for(int i = 0; i < qtd_numero; i++) {
-		    for(int j = 0; j < qtd_numero; j++) {
+		for(int i = 0; i < vetor.length; i++) {
+		    for(int j = 0; j < vetor.length; j++) {
 		        if(i != j && j > i && vetor[i] > vetor[j]) {
 		            int aux = vetor[i];
 		            vetor[i] = vetor[j];
@@ -23,9 +23,11 @@ public class Main
 		    }
 		}
 		
-		for(int i = 0; i < qtd_numero; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print(vetor[i] + " ");
 		}
+
+		entrada.close();
 		
 	}
 }

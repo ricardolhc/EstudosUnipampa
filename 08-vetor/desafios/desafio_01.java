@@ -8,7 +8,7 @@ public class Main
 		
 		int senha[] = new int[10];
 		
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < senha.length; i++) {
             
             boolean repetido;
             
@@ -19,7 +19,7 @@ public class Main
                 System.out.print("Digite um numero: ");
                 senha[i] = entrada.nextInt();
                 
-                for(int j = 0; j < 10; j++) {
+                for(int j = 0; j < senha.length; j++) {
                     if(senha[i] == senha[j] && i != j) {
                         System.out.println("Numero invalido");
                         repetido = true;
@@ -33,6 +33,8 @@ public class Main
         for(int i = 0; i < 10; i++) {
             System.out.print(senha[i]);
         }
+
+        entrada.close();
 
 	}
 }
