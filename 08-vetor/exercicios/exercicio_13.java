@@ -26,7 +26,7 @@ public class Main
 		    }
 		    entrada.nextLine();
 		    
-		    for(int j = 0; j < 3; j++) {
+		    for(int j = 0; j < provas.length; j++) {
 		        if(j == 0) {
 		            media[i] = provas[j] * 2;
 		        } else if(j == 1) {
@@ -51,5 +51,7 @@ public class Main
 		    System.out.println("Classificado: " + (atual + 1) + " Nome: " + nome[posMaiorNota] + " Matricula: " + matricula[posMaiorNota] + " Media: " + media[posMaiorNota]);
 		    media[posMaiorNota] = 0;
 		}
+
+		entrada.close();
 	}
 }

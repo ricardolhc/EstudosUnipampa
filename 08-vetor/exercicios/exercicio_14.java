@@ -12,12 +12,12 @@ public class Main
 		String inscricao[] = new String[10];
         int pontuacao[] = new int[10];
         
-        for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < gabarito.length; i++) {
             System.out.print("Digite o gabarito da questão " + (i + 1) + ": ");
             gabarito[i] = entrada.nextLine();
         }
         
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < nome.length; i++) {
             System.out.print("Digite o nome do candidato " + (i + 1) + ": ");
             nome[i] = entrada.nextLine();
             
@@ -31,16 +31,18 @@ public class Main
             }
             
             pontuacao[i] = 0;
-            for(int j = 0; j < 5; j++) {
+            for(int j = 0; j < gabarito.length; j++) {
                 if(gabarito[j].equals(respotas[j])) {
                     pontuacao[i] += 2;
                 }
             }
         }
         
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < nome.length; i++) {
             System.out.println("Nome: " + nome[i] + " Num. Inscricao: " + inscricao[i] + " Nota: " + pontuacao[i]);
         }
+
+        entrada.close();
 
 	}
 }

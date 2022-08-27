@@ -5,7 +5,7 @@ public class Main
 		int [] n = new int [5];
 		int impar = 1;
 		
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < n.length; i++) {
 		    n[i] = impar;
 		    impar += 2;
 		}

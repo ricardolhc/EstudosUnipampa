@@ -9,16 +9,18 @@ public class Main
 		int vetor[] = new int[10];
 		int soma = 0;
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " numero: ");
 		    vetor[i] = entrada.nextInt();
 		}
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    soma += vetor[i];
 		}
 		
 		System.out.print("A soma total é: " + soma);
+
+		entrada.close();
 		
 	}
 }

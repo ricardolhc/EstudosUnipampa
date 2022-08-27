@@ -9,7 +9,7 @@ public class Main
 		int vetor[] = new int[10];
 		int pos;
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " numero: ");
 		    vetor[i] = entrada.nextInt();
 		}
@@ -18,6 +18,8 @@ public class Main
 		pos = entrada.nextInt();
 		
 		System.out.print("O valor da posicao " + pos + " é: " + vetor[pos]);
+
+		entrada.close();
 		
 	}
 }

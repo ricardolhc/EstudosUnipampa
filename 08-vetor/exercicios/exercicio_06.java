@@ -10,7 +10,7 @@ public class Main
 		int valor;
 		boolean achou = false;
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " numero: ");
 		    vetor[i] = entrada.nextInt();
 		}
@@ -18,7 +18,7 @@ public class Main
 		System.out.print("Digite um valor: ");
 		valor = entrada.nextInt();
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    if(valor == vetor[i]) {
 		        achou = true;
 		        System.out.println("Encontrado na posicao " + i);
@@ -28,6 +28,8 @@ public class Main
 		if(achou == false) {
 		    System.out.print("Não encontrado");
 		}
+
+		entrada.close();
 	
 	}
 }

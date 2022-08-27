@@ -8,7 +8,7 @@ public class Main
 		
 		int vetor[] = new int[10];
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " numero: ");
 		    vetor[i] = entrada.nextInt();
 		}
@@ -16,7 +16,7 @@ public class Main
 		int menorNumero = vetor[0];
 		int maiorNumero = vetor[0];
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    if(menorNumero > vetor[i]) {
 		        menorNumero = vetor[i];
 		    }
@@ -27,6 +27,8 @@ public class Main
 		
 		System.out.println("O maior numero é: " + maiorNumero);
 		System.out.print("O menor numero é: " + menorNumero);
+
+		entrada.close();
 		
 	}
 }

@@ -11,7 +11,7 @@ public class Main
 		double mediaVoltas = 0;
 		double tempoVolta[] = new double[3];
 		
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < tempoVolta.length; i++) {
 		    System.out.print("Digite o tempo da " + (i + 1) + " volta (em segundos): ");
 		    tempoVolta[i] = entrada.nextDouble();
 		    mediaVoltas += tempoVolta[i];
@@ -21,7 +21,7 @@ public class Main
 		voltaMelhorTempo = 1;
 		melhorTempo = tempoVolta[0];
 		
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < tempoVolta.length; i++) {
 		    if(melhorTempo > tempoVolta[i]) {
 		        melhorTempo = tempoVolta[i];
 		        voltaMelhorTempo = i + 1;
@@ -31,6 +31,8 @@ public class Main
 		System.out.println("Melhor tempo: " + melhorTempo);
 		System.out.println("Volta com o melhorTempo: " + voltaMelhorTempo);
 		System.out.printf("Media das voltas: %.2f", mediaVoltas);
+
+		entrada.close();
 		
 	}
 }

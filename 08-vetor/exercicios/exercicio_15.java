@@ -10,7 +10,7 @@ public class Main
 		int numeroDado;
 		int numeroUm = 0, numeroDois = 0, numeroTres = 0, numeroQuatro = 0, numeroCinco = 0, numeroSeis = 0;
 		
-		for(int i = 0; i < 20; i++) {
+		for(int i = 0; i < jogadasDado.length; i++) {
 		    
 		    do {
 		        
@@ -42,7 +42,7 @@ public class Main
 		
 		System.out.print("Sequencia de numeros sorteados: ");
 		
-		for(int i = 0; i < 20; i++) {
+		for(int i = 0; i < jogadasDado.length; i++) {
 		    System.out.print(jogadasDado[i] + " ");
 		}
 		
@@ -53,6 +53,8 @@ public class Main
 		System.out.println("Quantidade de numero 4 sorteados: " + numeroQuatro);
 		System.out.println("Quantidade de numero 5 sorteados: " + numeroCinco);
 		System.out.println("Quantidade de numero 6 sorteados: " + numeroSeis);
+
+		entrada.close();
 		
 	}
 }

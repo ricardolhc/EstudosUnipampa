@@ -10,7 +10,7 @@ public class Main
 		int igualDez = 0, maiorMedia = 0, igualMedia = 0;
 		double media = 0;
 		
-		for(int i = 0; i < 10; i++) {
+		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " valor: ");
 		    vetor[i] = entrada.nextDouble();
 		    media += vetor[i];
@@ -18,7 +18,7 @@ public class Main
 		
 	    media /= 10;
 	    
-	    for(int i = 0; i < 10; i++) {
+	    for(int i = 0; i < vetor.length; i++) {
 	        if(vetor[i] == 10) {
 	            igualDez++;
 	        }
@@ -33,6 +33,8 @@ public class Main
 	    System.out.println("Quantidade de numeros igual a 10: " + igualDez);
 	    System.out.println("Quantidade de numeros maior que a media: " + maiorMedia);
 	    System.out.println("Quantidade de numeros igual a media: " + igualMedia);
+
+		entrada.close();
 		
 	}
 }
