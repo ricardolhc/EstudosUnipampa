@@ -2,18 +2,23 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
+
+		float base, altura;
+		float perimetro, area;
 	    
-        	System.out.print("Digite a base do retangulo: ");
-        	float base = sc.nextFloat();
+        System.out.print("Digite a base do retangulo: ");
+        base = input.nextFloat();
         
-        	System.out.print("Digite a altura do retangulo: ");
-        	float altura = sc.nextFloat();
+        System.out.print("Digite a altura do retangulo: ");
+        altura = input.nextFloat();
         
-        	float perimetro = 2 * (base + altura);
-        	float area = altura * base;
+    	perimetro = 2 * (base + altura);
+        area = altura * base;
         
-        	System.out.println("O perimetro do retangulo é: " + perimetro + "un");
-        	System.out.println("A area do retangulo é: " + area + "un²");
+        System.out.println("O perimetro do retangulo é: " + perimetro + "un");
+        System.out.println("A area do retangulo é: " + area + "un²");
+
+		input.close();
 	}
 }

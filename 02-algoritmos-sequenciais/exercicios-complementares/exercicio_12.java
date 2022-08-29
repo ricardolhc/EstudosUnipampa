@@ -2,11 +2,15 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
+
+		float anosIdade;
 	    
-        	System.out.print("Digite quantos anos você tem: ");
-        	float idade_anos = sc.nextFloat();
+        System.out.print("Digite quantos anos você tem: ");
+        anosIdade = input.nextFloat();
         	
-        	System.out.print("Você viveu " + idade_anos * 365 + " dias");
+        System.out.print("Você viveu " + anosIdade * 365 + " dias");
+
+		input.close();
 	}
 }
