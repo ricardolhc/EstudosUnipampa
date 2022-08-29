@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		int pessoas;
 	    
 	    System.out.print("Publico = ");
-		int pessoas = entrada.nextInt();
+		pessoas = input.nextInt();
 		
 		System.out.print("Publico ");
 		
@@ -19,5 +20,6 @@ public class Main
 		    System.out.print("Excelente");
 		}
 		
+		input.close();
 	}
 }

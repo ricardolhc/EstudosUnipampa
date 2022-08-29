@@ -1,18 +1,19 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		float peso, altura, imc;
 	    
 	    System.out.print("Peso (kg) = ");
-		float peso = entrada.nextFloat();
+		peso = input.nextFloat();
 		
 		System.out.print("Altura (m) = ");
-		float altura = entrada.nextFloat();
+		altura = input.nextFloat();
 		
-		float imc = (peso / (altura * altura));
+		imc = (peso / (altura * altura));
 		
 		System.out.print("IMC = ");
 		System.out.format("%.2f", imc);
@@ -26,5 +27,7 @@ public class Main
 		} else {
 		    System.out.print(" : Obesidade");
 		}
+
+		input.close();
 	}
 }

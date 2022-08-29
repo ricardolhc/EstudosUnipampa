@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		int idade;
 	    
 	    System.out.print("Idade = ");
-		int idade = entrada.nextInt();
+		idade = input.nextInt();
 		
 		System.out.print("Categoria ");
 		
@@ -21,5 +22,6 @@ public class Main
 		    System.out.print("Inválida");
 		}
 		
+		input.close();
 	}
 }

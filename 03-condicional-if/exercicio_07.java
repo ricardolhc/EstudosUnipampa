@@ -4,13 +4,15 @@ public class Main
 {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		int hora, minutos;
 	    
 	    System.out.print("Hora = ");
-	    int hora = entrada.nextInt();
+	    hora = input.nextInt();
 	    
 	    System.out.print("Minutos = ");
-	    int minutos = entrada.nextInt();
+	    minutos = input.nextInt();
 	    
 	    if(hora < 0 || hora > 23) {
 	        System.out.println("Hora incorreta");
@@ -22,5 +24,7 @@ public class Main
 	    } else {
 	        System.out.print(((hora * 3600) + (minutos * 60)) + " segundos");
 	    }
+
+		input.close();
 	}
 }

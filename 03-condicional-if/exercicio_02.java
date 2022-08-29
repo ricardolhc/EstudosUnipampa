@@ -1,31 +1,32 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		float n1, n2, n3, media;
 	    
 	    System.out.print("N1 = ");
-		float n1 = entrada.nextFloat();
+		n1 = input.nextFloat();
 		
 		System.out.print("N2 = ");
-		float n2 = entrada.nextFloat();
+		n2 = input.nextFloat();
 		
 		System.out.print("N3 = ");
-		float n3 = entrada.nextFloat();
+		n3 = input.nextFloat();
 		
-		float media = (n1 + n2 + n3) / 3;
+		media = (n1 + n2 + n3) / 3;
+
+		System.out.print("Media = ");
+		System.out.format("%.2f", media);
 		
 		if(media >= 6) {
-		    System.out.print("Media = ");
-		    System.out.format("%.2f", media);
 		    System.out.print(" : Aprovado");
 		} else {
-		    System.out.print("Media = ");
-		    System.out.format("%.2f", media);
 		    System.out.print(" : Reprovado");
 		}
-		
+
+		input.close();
 	}
 }

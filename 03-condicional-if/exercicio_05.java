@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		int idade;
 	    
 	    System.out.print("Idade = ");
-		int idade = entrada.nextInt();
+		idade = input.nextInt();
 		
 		if(idade < 16) {
 		    System.out.print("Não pode votar");
@@ -16,6 +17,7 @@ public class Main
 		} else {
 		    System.out.print("Voto obrigatório");
 		}
-		
+
+		input.close();
 	}
 }
