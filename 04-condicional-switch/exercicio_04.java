@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		float valor;
+		int numero;
 	    
 	    System.out.print("Digite um valor: ");
-	    float valor = entrada.nextFloat();
+	    valor = input.nextFloat();
 	    
 	    System.out.print("Digite um numero (1-4): ");
-	    int numero = entrada.nextInt();
+	    numero = input.nextInt();
 	    
 	    switch(numero) {
 	        case 1:
@@ -35,5 +37,7 @@ public class Main
 	            System.out.print("Número inválido!");
 	            break;
 	    }
+
+		input.close();
 	}
 }

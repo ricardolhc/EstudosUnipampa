@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		char escolha;
 	    
 	    System.out.println("Opção   Ação");
 	    System.out.println("a       Cadastrar");
@@ -13,7 +14,7 @@ public class Main
 	    System.out.println("d       Remover");
 	    System.out.println("e       Sair");
 	    System.out.print("Opção: ");
-	    char escolha = entrada.next().charAt(0);
+	    escolha = input.next().charAt(0);
 	    
 	    switch(escolha) {
 	        case 'a': case 'A':
@@ -41,5 +42,6 @@ public class Main
 	            break;
 	    }
 	    
+		input.close();
 	}
 }

@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-	    Scanner entrada = new Scanner(System.in);
+	    Scanner input = new Scanner(System.in);
+
+		int numero;
 	    
 	    System.out.print("Digite um numero (0-9): ");
-	    int numero = entrada.nextInt();
+	    numero = input.nextInt();
 	    
 	    switch(numero) {
 	        case 0:
@@ -54,5 +55,7 @@ public class Main
 	            System.out.print("Número inválido!");
 	            break;
 	    }
+
+		input.close();
 	}
 }
