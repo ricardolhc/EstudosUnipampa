@@ -208,21 +208,33 @@ public class Main
 		            System.out.println("");
 		            System.out.println("Total de acertos: " + questoes_Corretas);
 		            System.out.println("Total de erros: " + questoes_Erradas);
+
+					switch(questoes_Corretas) {
+						case 0:
+							System.out.println("Você acertou nenhuma, mas não desanime!");
+							break;
+						
+						case 1:
+							System.out.println("Você tem um grande caminho pela frente!");
+							break;
+
+						case 2:
+							System.out.println("Continue assim!");	
+							break;
+
+						case 3:
+							System.out.println("Quase lá!");
+							break;
+
+						case 4:
+							System.out.println("Você é sensacional!");
+							break;
+
+						case 5:
+							System.out.println("Você é um GÊNIO!");
+							break;
+					}
 		            
-		            // MOSTRA UMA FRASE PERSONALIZADA DE ACORDO COM O NÚMERO DE ACERTOS
-		            if (questoes_Corretas == 0){
-                        System.out.println("Você não acertou nenhuma, mas não desanime!");
-		            } else if(questoes_Corretas == 1){
-		                System.out.println("Você tem um grande caminho pela frente!");
-                    } else if(questoes_Corretas == 2){
-		                System.out.println("Continue assim!");
-                    } else if(questoes_Corretas == 3){
-		                System.out.println("Quase lá!");
-                    } else if(questoes_Corretas == 4){
-                        System.out.println("Você é sensacional!");
-                    } else {                   
-                        System.out.println("Você é um GÊNIO!");
-		            }
 		            System.out.println("");
 		            
 		            break;
