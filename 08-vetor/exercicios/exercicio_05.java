@@ -1,16 +1,15 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int vetor[] = new int[10];
 		
 		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " numero: ");
-		    vetor[i] = entrada.nextInt();
+		    vetor[i] = input.nextInt();
 		}
 		
 		int menorNumero = vetor[0];
@@ -28,7 +27,7 @@ public class Main
 		System.out.println("O maior numero é: " + maiorNumero);
 		System.out.print("O menor numero é: " + menorNumero);
 
-		entrada.close();
+		input.close();
 		
 	}
 }

@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		double vetor[] = new double[10];
 		int igualDez = 0, maiorMedia = 0, igualMedia = 0;
@@ -12,7 +11,7 @@ public class Main
 		
 		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " valor: ");
-		    vetor[i] = entrada.nextDouble();
+		    vetor[i] = input.nextDouble();
 		    media += vetor[i];
 		}
 		
@@ -34,7 +33,7 @@ public class Main
 	    System.out.println("Quantidade de numeros maior que a media: " + maiorMedia);
 	    System.out.println("Quantidade de numeros igual a media: " + igualMedia);
 
-		entrada.close();
+		input.close();
 		
 	}
 }

@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
-import javafx.scene.media.Media;
-
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
 		String [] nome = new String [10];
@@ -11,20 +8,20 @@ public class Main
 		String [] matricula = new String [nome.length];
 		double [] media = new double [media.length];
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		for(int i = 0; i < matricula.length; i++) {
 		    System.out.print("Digite seu nome: ");
-		    nome[i] = entrada.nextLine();
+		    nome[i] = input.nextLine();
 		    
 		    System.out.print("Digite sua matricula: ");
-		    matricula[i] = entrada.nextLine();
+		    matricula[i] = input.nextLine();
 		    
 		    for(int j = 0; j < 3; j++) {
 		        System.out.print("Digite a pontuacao da prova " + (j + 1) + ": ");
-		        provas[j] = entrada.nextDouble();
+		        provas[j] = input.nextDouble();
 		    }
-		    entrada.nextLine();
+		    input.nextLine();
 		    
 		    for(int j = 0; j < provas.length; j++) {
 		        if(j == 0) {
@@ -52,6 +49,6 @@ public class Main
 		    media[posMaiorNota] = 0;
 		}
 
-		entrada.close();
+		input.close();
 	}
 }

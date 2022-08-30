@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int vetor[] = new int[10];
 		int valor;
@@ -12,11 +11,11 @@ public class Main
 		
 		for(int i = 0; i < vetor.length; i++) {
 		    System.out.print("Digite o " + i + " numero: ");
-		    vetor[i] = entrada.nextInt();
+		    vetor[i] = input.nextInt();
 		}
 		
 		System.out.print("Digite um valor: ");
-		valor = entrada.nextInt();
+		valor = input.nextInt();
 		
 		for(int i = 0; i < vetor.length; i++) {
 		    if(valor == vetor[i]) {
@@ -29,7 +28,7 @@ public class Main
 		    System.out.print("Não encontrado");
 		}
 
-		entrada.close();
+		input.close();
 	
 	}
 }

@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		String gabarito[] = new String[5];
 		
@@ -14,20 +13,20 @@ public class Main
         
         for(int i = 0; i < gabarito.length; i++) {
             System.out.print("Digite o gabarito da questão " + (i + 1) + ": ");
-            gabarito[i] = entrada.nextLine();
+            gabarito[i] = input.nextLine();
         }
         
         for(int i = 0; i < nome.length; i++) {
             System.out.print("Digite o nome do candidato " + (i + 1) + ": ");
-            nome[i] = entrada.nextLine();
+            nome[i] = input.nextLine();
             
             System.out.print("Digite o numero de inscricao do candidato " + (i + 1) + ": ");
-            inscricao[i] = entrada.nextLine();
+            inscricao[i] = input.nextLine();
             
             String respotas[] = new String[5];
             for(int j = 0; j < 5; j++) {
                System.out.print("Digite a resposta do candidato " + (i + 1) + " da questao " + (j + 1) + ": ");
-               respotas[j] = entrada.nextLine();
+               respotas[j] = input.nextLine();
             }
             
             pontuacao[i] = 0;
@@ -42,7 +41,6 @@ public class Main
             System.out.println("Nome: " + nome[i] + " Num. Inscricao: " + inscricao[i] + " Nota: " + pontuacao[i]);
         }
 
-        entrada.close();
-
+        input.close();
 	}
 }

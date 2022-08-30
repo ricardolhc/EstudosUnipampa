@@ -1,17 +1,16 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int [] a = new int [20];
 		int [] b = new int [20];
 		
 		for(int i = 0; i < a.length; i++) {
 		    System.out.print("Digite o " + (i + 1) + " valor: ");
-		    a[i] = entrada.nextInt();
+		    a[i] = input.nextInt();
 		}
 		
 		int j = 0;
@@ -29,7 +28,6 @@ public class Main
 		    System.out.print(b[i] + " ");
 		}
 
-		entrada.close();
-		
+		input.close();	
 	}
 }

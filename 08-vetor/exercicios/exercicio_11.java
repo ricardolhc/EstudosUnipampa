@@ -1,16 +1,15 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		String times[] = new String[5];
 		
 		for(int i = 0; i < times.length; i++) {
 		    System.out.print("Digite o " + i + " time: ");
-		    times[i] = entrada.nextLine();
+		    times[i] = input.nextLine();
 		}
 		
 		for(int i = 0; i < times.length; i++) {
@@ -21,7 +20,7 @@ public class Main
 		    }
 		}
 
-		entrada.close();
+		input.close();
 
 	}
 }

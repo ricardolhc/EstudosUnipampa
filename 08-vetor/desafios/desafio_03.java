@@ -1,22 +1,23 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
 		int [] vetorA = new int [8];
 		int [] vetorB = new int [8];
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int valorEscolhido;
 		
 		for(int i = 0; i < vetorA.length; i++) {
+
+			int numFatorial = 1;
 		    
 		    do {
 		        
 		        System.out.print("Digite o " + (i + 1) + " numero: ");
-		        valorEscolhido = entrada.nextInt();
+		        valorEscolhido = input.nextInt();
 		        
 		        if(valorEscolhido < 0) {
 		            System.out.println("Valor Inválido");
@@ -26,7 +27,6 @@ public class Main
 		    } while(valorEscolhido < 0);
 		    
 		    vetorA[i] = valorEscolhido;
-		    int numFatorial = 1;
 		    
 		    for(int j = 1; j <= valorEscolhido; j++) {
 		        numFatorial = numFatorial * j; 
@@ -38,6 +38,6 @@ public class Main
 		    System.out.println("Valor: " + vetorA[i] + " Fatorial: " + vetorB[i]);
 		}
 		
-		entrada.close();
+		input.close();
 	}
 }

@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int jogadasDado[] = new int[20];
 		int numeroDado;
@@ -15,7 +14,7 @@ public class Main
 		    do {
 		        
 		        System.out.print("Digite o numero do dado: ");
-		        numeroDado = entrada.nextInt();
+		        numeroDado = input.nextInt();
 		        
 		        if(numeroDado < 1 || numeroDado > 6) {
 		            System.out.println("Número inválido!");
@@ -24,20 +23,32 @@ public class Main
 		    } while(numeroDado < 1 || numeroDado > 6);
 		    
 		    jogadasDado[i] = numeroDado;
-		    
-		    if(numeroDado == 1) {
-		        numeroUm++;
-		    } else if(numeroDado == 2) {
-		        numeroDois++;
-		    } else if(numeroDado == 3) {
-		        numeroTres++;
-		    } else if(numeroDado == 4) {
-		        numeroQuatro++;
-		    } else if(numeroDado == 5) {
-		        numeroCinco++;
-		    } else if(numeroDado == 6) {
-		        numeroSeis++;
-		    }
+
+			switch(numeroDado) {
+				case 1:
+					numeroUm++;
+					break;
+
+				case 2:
+					numeroDois++;
+					break;
+
+				case 3:
+					numeroTres++;
+					break;
+
+				case 4:
+					numeroQuatro++;
+					break;
+				
+				case 5:
+					numeroCinco++;
+					break;
+
+				case 6:
+					numeroSeis++;
+					break;
+			}
 		}
 		
 		System.out.print("Sequencia de numeros sorteados: ");
@@ -54,7 +65,6 @@ public class Main
 		System.out.println("Quantidade de numero 5 sorteados: " + numeroCinco);
 		System.out.println("Quantidade de numero 6 sorteados: " + numeroSeis);
 
-		entrada.close();
-		
+		input.close();
 	}
 }

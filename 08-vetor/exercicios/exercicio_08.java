@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int vetorA[] = new int[10];
 		int vetorB[] = new int[10];
@@ -12,12 +11,12 @@ public class Main
 		
 		for(int i = 0; i < vetorA.length; i++) {
 		    System.out.print("Digite o " + i + " numero do vetor A: ");
-		    vetorA[i] = entrada.nextInt();
+		    vetorA[i] = input.nextInt();
 		}
 		
 		for(int i = 0; i < vetorB.length; i++) {
 		    System.out.print("Digite o " + i + " numero do vetor B: ");
-		    vetorB[i] = entrada.nextInt();
+		    vetorB[i] = input.nextInt();
 		}
 
 		for(int i = 0; i < vetorC.length; i++) {
@@ -25,7 +24,7 @@ public class Main
 		    System.out.println("Resultado da multiplicacao de " + vetorA[i] + " e " + vetorB[i] + " é: " + vetorC[i]);
 		}
 
-		entrada.close();
+		input.close();
 		
 	}
 }

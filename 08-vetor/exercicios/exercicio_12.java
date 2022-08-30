@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		double melhorTempo;
 		int voltaMelhorTempo;
@@ -13,7 +12,7 @@ public class Main
 		
 		for(int i = 0; i < tempoVolta.length; i++) {
 		    System.out.print("Digite o tempo da " + (i + 1) + " volta (em segundos): ");
-		    tempoVolta[i] = entrada.nextDouble();
+		    tempoVolta[i] = input.nextDouble();
 		    mediaVoltas += tempoVolta[i];
 		}
 		
@@ -32,7 +31,7 @@ public class Main
 		System.out.println("Volta com o melhorTempo: " + voltaMelhorTempo);
 		System.out.printf("Media das voltas: %.2f", mediaVoltas);
 
-		entrada.close();
+		input.close();
 		
 	}
 }
