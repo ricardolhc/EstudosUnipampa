@@ -1,37 +1,38 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 		
-		int n[][] = new int[2][4];
+		int matriz[][] = new int[2][4];
+
+		int x;
+		boolean encontrado = false;
 		             
-		for(int i = 0; i < n.length; i++) {
-		    for(int j = 0; j < n[0].length; j++) {
+		for(int i = 0; i < matriz.length; i++) {
+		    for(int j = 0; j < matriz[0].length; j++) {
 		        System.out.print("Digite um valor para a matriz[" + i + "][" + j + "]: ");
-		        n[i][j] = entrada.nextInt();
+		        matriz[i][j] = input.nextInt();
 		    }
 		}    
 		
-		int x;
-		boolean encontrado = false;
-		
 		System.out.print("Digite um valor: ");
-		x = entrada.nextInt();
+		x = input.nextInt();
 		
-		for(int i = 0; i < n.length; i++) {
-		    for(int j = 0; j < n[0].length; j++) {
-		        if(x == n[i][j]) {
+		for(int i = 0; i < matriz.length; i++) {
+		    for(int j = 0; j < matriz[0].length; j++) {
+		        if(x == matriz[i][j]) {
 		            encontrado = true;
 		            System.out.println("Linha: " + i + " Coluna: " + j);
 		        }
 		    }
 		} 
 		
-		if(encontrado == false) {
+		if(!encontrado) {
 		    System.out.print("Não encontrado");
 		}
+
+		input.close();
 	}
 }

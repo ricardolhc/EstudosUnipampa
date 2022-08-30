@@ -1,34 +1,33 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 		
 		int matriz[][] = new int[2][3];
-		int matriz_transposta[][] = new int[3][2];
+		int matrizTransposta[][] = new int[3][2];
 		             
 		for(int i = 0; i < matriz.length; i++){
 		    for(int j = 0; j < matriz[0].length; j++) {
 		        System.out.print("Digite um valor para a matriz[" + i + "][" + j + "]: ");
-		        matriz[i][j] = entrada.nextInt();
+		        matriz[i][j] = input.nextInt();
 		    }
 		}
 
 		for(int i = 0; i < matriz.length; i++) {
 		    for(int j = 0; j < matriz[0].length; j++) {
-		        matriz_transposta[j][i] = matriz[i][j];
+		        matrizTransposta[j][i] = matriz[i][j];
 		    }
 		}
 		
-		for(int i = 0; i < matriz_transposta.length; i++) {
-		    for(int j = 0; j < matriz_transposta[0].length; j++) {
-		        System.out.print(matriz_transposta[i][j] + " ");
+		for(int i = 0; i < matrizTransposta.length; i++) {
+		    for(int j = 0; j < matrizTransposta[0].length; j++) {
+		        System.out.print(matrizTransposta[i][j] + " ");
 		    }
 		    System.out.println();
 		}
 
+		input.close();
 	}
-	
 }

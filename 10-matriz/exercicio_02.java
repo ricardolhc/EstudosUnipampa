@@ -1,31 +1,30 @@
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
 	public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 		
-		int n[][] = new int[5][5];
+		int matriz[][] = new int[5][5];
+		int maiorQueDez = 0;
 		             
-		for(int i = 0; i < n.length; i++) {
-		    for(int j = 0; j < n[0].length; j++) {
+		for(int i = 0; i < matriz.length; i++) {
+		    for(int j = 0; j < matriz[0].length; j++) {
 		        System.out.print("Digite um valor para a matriz[" + i + "][" + j + "]: ");
-		        n[i][j] = entrada.nextInt();
+		        matriz[i][j] = input.nextInt();
 		    }
 		}    
 		
-		int maior_que_dez = 0;
-		
-		for(int i = 0; i < n.length; i++) {
-		    for(int j = 0; j < n[0].length; j++) {
-		        if(n[i][j] > 10) {
-		            maior_que_dez++;
+		for(int i = 0; i < matriz.length; i++) {
+		    for(int j = 0; j < matriz[0].length; j++) {
+		        if(matriz[i][j] > 10) {
+		            maiorQueDez++;
 		        }
 		    }
 		}
 		
-		System.out.print("Quantidade de valores maiores que 10: " + maior_que_dez);
-		 
+		System.out.print("Quantidade de valores maiores que 10: " + maiorQueDez);
+
+		input.close();
 	}
 }

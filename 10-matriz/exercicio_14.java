@@ -4,55 +4,56 @@ public class Main
 {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
-		int motores_produzidos[][] = new int[3][2];
-		int motores_negocios[][] = new int[2][2];
+		int motoresProduzidos[][] = new int[3][2];
+		int motoresNegocios[][] = new int[2][2];
+		int lucroAnual = 0;
 		
-		for(int i = 0; i < motores_produzidos.length; i++) {
+		for(int i = 0; i < motoresProduzidos.length; i++) {
 		    System.out.println("Mês " + (i + 1));
-		    for(int j = 0; j < motores_produzidos[0].length; j++) {
+		    for(int j = 0; j < motoresProduzidos[0].length; j++) {
 		        System.out.print("Digite a quantidade produzida do motor M" + (j + 1) + ": ");
-		        motores_produzidos[i][j] = entrada.nextInt();
+		        motoresProduzidos[i][j] = input.nextInt();
 		    }
 		}
 		
 		System.out.println();
 		
-		for(int i = 0; i < motores_negocios.length; i++) {
+		for(int i = 0; i < motoresNegocios.length; i++) {
 		    System.out.println("Motor M" + (i + 1));
-		    for(int j = 0; j < motores_negocios[0].length; j++) {
+		    for(int j = 0; j < motoresNegocios[0].length; j++) {
 		        if(j == 0) {
 		            System.out.print("Digite o lucro: ");
 		        } else {
 		            System.out.print("Digite o custo: ");
 		        }
-		        motores_negocios[i][j] = entrada.nextInt();
+		        motoresNegocios[i][j] = input.nextInt();
 		    }
 		}  
 		
 		System.out.println();
 		
-		int lucro_anual = 0;
-		
-		for(int i = 0; i < motores_produzidos.length; i++) {
+		for(int i = 0; i < motoresProduzidos.length; i++) {
 		    System.out.print("Mês " + (i + 1) + "   ");
-		    int custo_mes = 0;
-		    int lucro_mes = 0;
-		    for(int j = 0; j < motores_produzidos[0].length; j++) {
-		        for(int k = 0; k < motores_negocios.length; k++) {
+		    int custoMes = 0;
+		    int lucroMes = 0;
+
+		    for(int j = 0; j < motoresProduzidos[0].length; j++) {
+		        for(int k = 0; k < motoresNegocios.length; k++) {
 		            if(k == 0) {
-		                lucro_mes += motores_produzidos[i][j] * motores_negocios[j][k];
+		                lucroMes += motoresProduzidos[i][j] * motoresNegocios[j][k];
 		            } else {
-		                custo_mes += motores_produzidos[i][j] * motores_negocios[j][k];
+		                custoMes += motoresProduzidos[i][j] * motoresNegocios[j][k];
 		            }
 		        }
 		    }
-		    lucro_anual += lucro_mes;
-		    System.out.println("Custo: " + custo_mes + "   Lucro: " + lucro_mes);
+		    lucroAnual += lucroMes;
+		    System.out.println("Custo: " + custoMes + "   Lucro: " + lucroMes);
 		}
 		
-		System.out.println("Lucro Anual: " + lucro_anual);
+		System.out.println("Lucro Anual: " + lucroAnual);
 		
+		input.close();
 	}
 }
