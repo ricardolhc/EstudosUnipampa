@@ -1,23 +1,22 @@
 import java.util.Scanner;
 
-public class Main
-{
-	public static void main(String[] args) {
+public class Main {
+    public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+	Scanner input = new Scanner(System.in);
 		
-		int numero;
+	int numero;
 		
-                do {
+        do {
+            System.out.print("Informe um número inteiro ou zero para sair: ");
+            numero = input.nextInt();
             
-                        System.out.print("Informe um número inteiro ou zero para sair: ");
-                        numero = entrada.nextInt();
+            if(numero != 0) {
+                System.out.println("O quadrado de " + numero + " é: " + numero * numero);
+            }
             
-                        if(numero != 0) {
-                                System.out.println("O quadrado de " + numero + " é: " + numero * numero);
-                        }
-            
-                } while(numero != 0);
-        
-	}
+        } while(numero != 0);
+
+        input.close();
+    }
 }

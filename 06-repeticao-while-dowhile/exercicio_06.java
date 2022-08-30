@@ -4,29 +4,32 @@ public class Main
 {
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		char escolha;
-	        float saldo = 0;
+	    float saldo = 0;
 		
 		do {
+
+			float saque, deposito;
 		    
-		        System.out.println("\n(a) consulta saldo");
-		        System.out.println("(b) saque");
-		        System.out.println("(c) deposito");
-		        System.out.println("(d) sair");
-		        System.out.print("Opção: ");
-		        escolha = entrada.next().charAt(0);
+		    System.out.println("\n(a) consulta saldo");
+		    System.out.println("(b) saque");
+	        System.out.println("(c) deposito");
+	        System.out.println("(d) sair");
+		    System.out.print("Opção: ");
+		    escolha = input.next().charAt(0);
 		    
-		        switch(escolha) {
+	        switch(escolha) {
 		        
-		                case 'a': case 'A':
-		                        System.out.println("Saldo: R$" + saldo);
-		                        break;
+	            case 'a': case 'A':
+                    System.out.println("Saldo: R$" + saldo);
+					break;
 		            
-		                case 'b': case 'B':
-		                        System.out.print("Valor: ");
-		                        float saque = entrada.nextFloat();
+		        case 'b': case 'B':
+		            System.out.print("Valor para saque: ");
+		            saque = input.nextFloat();
+
 					if(saque > 0) {
 						if(!(saque > saldo)) {
 							saldo -= saque;
@@ -36,26 +39,30 @@ public class Main
 					} else {
 						System.out.println("Saque não pode ser zero ou negativo!");
 					}
-		                        break;
+			        break;
 		           
-		                case 'c': case 'C':
-		                        System.out.print("Valor: ");
-		                        float deposito = entrada.nextFloat();
+		        case 'c': case 'C':
+		            System.out.print("Valor para deposito: ");
+		            deposito = input.nextFloat();
+
 					if(deposito <= 0) {
-		                            System.out.println("Depósito não pode ser zero ou negativo!");
-		                        } else {
-		                            saldo += deposito;  
-		                        }
-		                        break;
+	                    System.out.println("Depósito não pode ser zero ou negativo!");
+		            } else {
+	                    saldo += deposito;  
+		            }
+		            break;
 		           
-		                case 'd': case 'D':
-		                        break;
+		        case 'd': case 'D':
+					System.out.println("Você escolheu sair do sistema!");
+	                break;
 		           
-		                default:
-		                        System.out.println("Opção inválida!");
-		                        break;
-		        }
+	            default:
+		            System.out.println("Opção inválida!");
+	                break;
+		    }
 		    
 		} while (escolha != 'd' && escolha != 'D');
+
+		input.close();
 	}
 }
