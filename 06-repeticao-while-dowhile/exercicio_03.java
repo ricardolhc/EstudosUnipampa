@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 		
-	Scanner input = new Scanner(System.in);
-		
-	int numero;
+        Scanner input = new Scanner(System.in);
+            
+        int numero;
 		
         do {
             System.out.print("Informe um número inteiro ou zero para sair: ");
