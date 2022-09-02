@@ -36,5 +36,8 @@ Exercícios que contêm o paradigma de orientação a objetos, ela considera que
 ### [10. Matriz](./10-matriz)
 Exercícios que contêm o conceito de vetor, usado quando se deseja um dinamismo bidimensional no código aplicando, em conjunto, conceitos das estruturas de repetição.
 
-### [11. Trabalho em Grupo](https://github.com/ricardolhc/geracao-arquivo.git)
+### [11. Arquivos](./11-arquivos)
+Exercícios que contêm a manipulação de arquivos, podendo ler e/ou gravar arquivos de texto ou binários.
+
+### [12. Trabalho em Grupo](https://github.com/ricardolhc/geracao-arquivo.git)
 Trabalho em grupo com o objetivo de aplicar conceitos da programação anteriormente vistos.
