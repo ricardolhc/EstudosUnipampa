@@ -1,4 +1,3 @@
 [submodule "12-trabalho-em-grupo"]
 	path = 12-trabalho-em-grupo
 	url = https://github.com/ricardolhc/geracao-arquivo.git
-	ignore = dirty
