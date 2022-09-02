@@ -1,7 +1,10 @@
 # Lista de Exercícios: Estrutura Condicional Switch
 
+## Resumo
+Exercícios que contêm a estrutura condicional switch, usada para algoritmos não sequenciais; utilizada quando se trata de somente uma únida entrada de dado.
+
 ## Configuração
-A ferramenta online utilizada para esta atividade é o [GDB online].
+A ferramenta utilizada para esta atividade foi o [GDB online](https://www.onlinegdb.com).
 
 ## Exercícios
 
@@ -34,5 +37,3 @@ Desenvolva, em Linguagem Java, um programa que apresente um menu ao usuário com
 | c     | Consultar |
 | d     | Remover   |
 | e     | Sair      |
-
-[GDB online]: https://www.onlinegdb.com

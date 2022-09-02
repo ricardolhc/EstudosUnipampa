@@ -1,5 +1,8 @@
 # Lista de Exercícios: Arquivos
 
+## Resumo
+Exercícios que contêm a manipulação de arquivos, podendo ler e/ou gravar arquivos de texto ou binários.
+
 ## Configuração
 A ferramenta utilizada para esta atividade é o [Visual Studio Code](https://code.visualstudio.com/download).
 

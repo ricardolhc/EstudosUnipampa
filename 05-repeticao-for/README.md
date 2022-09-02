@@ -1,7 +1,10 @@
 # Lista de Exercícios: Estruturas de repetição for
 
+## Resumo
+Exercícios que contêm a estrutura de repetição for, usada para repetir trechos específicos de código; utilizada quando se sabe a quantidade de vezes que se deseja repetir.
+
 ## Configuração
-A ferramenta online utilizada para esta atividade é o [GDB online].
+A ferramenta utilizada para esta atividade foi o [GDB online](https://www.onlinegdb.com).
 
 ## Exercícios
 
@@ -31,5 +34,3 @@ Faça um algoritmo que leia 20 números e imprimir a soma dos números cujo o va
 
 ### [Exercício 9](./exercicio_09.java)
 Faça um algoritmo para ler a nota de três provas (p1, p2, p3) de 10 alunos e escrever a média aritmética de cada aluno, se a média for maior que 6 escrever “Parabéns Aprovado!”, senão “Você foi Reprovado!”.
-
-[GDB online]: https://www.onlinegdb.com

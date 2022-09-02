@@ -1,7 +1,10 @@
 # Lista de Exercícios: Matrizes
 
+## Resumo
+Exercícios que contêm o conceito de vetor, usado quando se deseja um dinamismo bidimensional no código aplicando, em conjunto, conceitos das estruturas de repetição.
+
 ## Configuração
-A ferramenta online utilizada para esta atividade é o [GDB online].
+A ferramenta utilizada para esta atividade foi o [GDB online](https://www.onlinegdb.com).
 
 ## Exercícios
 
@@ -123,5 +126,3 @@ Faça um programa em Java que:
 * Determine e imprima o custo total de cada produto em cada armazém;
 * Determine e imprima o custo total de cada produto em todos os armazéns;
 * Determine e imprima o custo total de cada armazém.
-
-[GDB online]: https://www.onlinegdb.com

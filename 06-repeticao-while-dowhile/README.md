@@ -1,7 +1,10 @@
 # Lista de Exercícios: Estruturas de repetição while e do while
 
+## Resumo
+Exercícios que contêm a estrutura de repetição while e do-while, usada para repetir trechos específicos de código; utilizada quando não se sabe a quantidade de vezes que se deseja repetir.
+
 ## Configuração
-A ferramenta online utilizada para esta atividade é o [GDB online].
+A ferramenta utilizada para esta atividade foi o [GDB online](https://www.onlinegdb.com).
 
 ## Exercícios
 
@@ -134,5 +137,3 @@ Número total de torcedores: 1
 Torcedores gremistas: 0
 <br>
 Torcedores colorados: 0
-
-[GDB online]: https://www.onlinegdb.com

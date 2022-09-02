@@ -1,5 +1,8 @@
 # Lista de Exercícios: Matrizes
 
+## Resumo
+Exercícios que contêm o paradigma de orientação a objetos, ela considera que os dados a serem processados e os mecanismos de processamento destes dados devem ser considerados em conjunto.
+
 ## Configuração
 As ferramentas utilizadas para a realização do trabalho são o [Visual Studio Code](https://code.visualstudio.com/download) e [GDB Online](https://www.onlinegdb.com).
 

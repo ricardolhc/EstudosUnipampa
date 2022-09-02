@@ -1,7 +1,10 @@
 # Lista de Exercícios: Estrutura Condicional If
 
+## Resumo
+Exercícios que contêm a estrutura condicional if, usada para algoritmos não sequenciais.
+
 ## Configuração
-A ferramenta online utilizada para esta atividade é o [GDB online].
+A ferramenta utilizada para esta atividade foi o [GDB online](https://www.onlinegdb.com).
 
 ## Exercícios
 
@@ -121,5 +124,3 @@ Minutos = 61
 Saída: Hora incorreta
 <br>
 Minutos incorretos
-
-[GDB online]: https://www.onlinegdb.com

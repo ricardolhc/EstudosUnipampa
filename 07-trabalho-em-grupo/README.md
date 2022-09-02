@@ -1,7 +1,10 @@
 # Trabalho em grupo
 
+## Resumo
+Trabalho em grupo com o objetivo de aplicar conceitos da programação anteriormente vistos.
+
 ## Configuração
-A ferramenta online utilizada para esta atividade é o [GDB online].
+A ferramenta utilizada para esta atividade foi o [GDB online](https://www.onlinegdb.com).
 
 ## Autores
 * Ricardo Luiz Hentges Costa
@@ -174,5 +177,3 @@ c) Sair
 Escolha o tema para responder às questões: c
 <br>
 Até mais!
-
-[GDB online]: https://www.onlinegdb.com
