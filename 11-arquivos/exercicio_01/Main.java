@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Scanner input = new Scanner(System.in);
         String nomeArquivo;
@@ -16,24 +16,12 @@ public class Main {
         input.close();
     }
 
-    public static int getTamanho(Arquivo arquivo) {
-        int tamanhoArquivo = 0;
-        try {
-            tamanhoArquivo = arquivo.getTamanho() - 1;
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        return tamanhoArquivo;
+    public static int getTamanho(Arquivo arquivo) throws Exception {
+        return arquivo.getTamanho() - 1;
     }
 
-    public static String[] getLinhas(Arquivo arquivo) {
-        String[] linhas = null;
-        try {
-            linhas = arquivo.getLinhas();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        return linhas;
+    public static String[] getLinhas(Arquivo arquivo) throws Exception {
+        return arquivo.getLinhas();
     }
 
     public static int somatorioArquivo(int tamanhoArquivo, String[] linhas) {
