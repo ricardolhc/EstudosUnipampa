@@ -3,11 +3,11 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, Exception {
         menuPrincipal();
     }
     
-    public static void menuPrincipal() throws IOException {
+    public static void menuPrincipal() throws IOException, Exception {
         int escolha = 0;
         ArrayList<Produto> produtos = new ArrayList<Produto>();
         Scanner input = new Scanner(System.in);
@@ -73,22 +73,17 @@ public class Main {
         return new Produto(registro, nome, preco, quantidade);
     }
 
-    public static void visualizarEstoque() throws IOException {
+    public static void visualizarEstoque() throws IOException, Exception {
         ObjectInputStream objectInput = new ObjectInputStream(new FileInputStream("estoque.bytej"));
-        try {
-            System.out.println("Estoque: ");
-            ArrayList<Produto> produtosLer = (ArrayList<Produto>) objectInput.readObject();
+        
+        System.out.println("Estoque: ");
 
-            for(int i = 0; i < produtosLer.size(); i++) {
-                System.out.println(produtosLer.get(i));
-            }
+        ArrayList<Produto> produtosLer = (ArrayList<Produto>) objectInput.readObject();
 
-            System.out.println();
-
-        } catch (Exception e) {
-            System.out.println(e);
-        } 
-                    
+        for(int i = 0; i < produtosLer.size(); i++) {
+            System.out.println(produtosLer.get(i));
+        }
+            
         objectInput.close();
     }
 
