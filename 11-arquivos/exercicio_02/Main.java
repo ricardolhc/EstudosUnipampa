@@ -1,13 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Arquivo arquivo = new Arquivo("exercicio_02.txt");
-        try {
-            arquivo.gravar(registrarDados());
-        } catch(Exception e) {
-            System.out.println(e);
-        } 
+        arquivo.gravar(registrarDados());
     }
 
     public static String registrarDados() {
