@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class Main {
+public class Exercicio_13 {
 	public static void main(String[] args) {
 		
 		String [] nome = new String [10];
 		double [] provas = new double [3];
 		String [] matricula = new String [nome.length];
-		double [] media = new double [media.length];
+		double [] media = new double [nome.length];
 		
 		Scanner input = new Scanner(System.in);
 		
