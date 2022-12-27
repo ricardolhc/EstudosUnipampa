@@ -5,5 +5,5 @@
 
 [submodule "15-trabalho-em-grupo"]
 	path = 15-trabalho-em-grupo
-	url = https://github.com/ricardolhc/POO.git
+	url = https://github.com/ricardolhc/POO/tree/main
 	ignore = dirty
