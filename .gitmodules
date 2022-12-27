@@ -2,3 +2,8 @@
 	path = 12-trabalho-em-grupo
 	url = https://github.com/ricardolhc/geracao-arquivo.git
 	ignore = dirty
+
+[submodule "15-trabalho-em-grupo"]
+	path = 15-trabalho-em-grupo
+	url = https://github.com/ricardolhc/POO.git
+	ignore = dirty
