@@ -41,7 +41,7 @@ A livraria CC trabalha com a venda de livros, revistas e dvds, onde cada produto
 
 Com as novas regras de aposentadoria, a UNIPAMPA precisa calcular o tempo mínimo de contribuição para cada um de seus servidores. Para isso, existe a interface Aposentadoria. Essa Interface é interpretada da seguinte maneira: "todos os servidores vinculados à UNIPAMPA (técnicos e professores) precisam saber calcular o tempo mínimo de contribuição, devolvendo um int correspondente ao número de anos". Técnicos devem contribuir no mínimo 30 anos, enquanto professores 20 (essa informação é meramente para contextualizar a questão e não corresponde à realidade). O sistema utilizado pela UNIPAMPA é representado pelo seguinte diagrama de classes:
 
-<figure><img src="exercicio_02/diagrama_de_classes.png" alt="Diagrama de Classes"><figcaption>Diagrama de Classes</figcaption></figure>
+<figure><img src="exercicio_02/images/diagrama_de_classes.png" alt="Diagrama de Classes"><figcaption>Diagrama de Classes</figcaption></figure>
 
 <pre>
 class abstract Pessoa {
