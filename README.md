@@ -30,7 +30,7 @@ O repositório está dividido em pastas, onde cada pasta é abordado um novo ass
 
 ### [12. Trabalho em Grupo](https://github.com/ricardolhc/geracao-arquivo.git)
 
-### [13. Classes, Objetos, Atributos e Métodos](./13-arquivos)
+### [13. Classes, Objetos, Atributos e Métodos](./13-classes-objetos-atributos-metodos)
 
 ### [14. Herança, Polimorfismo, Classe Abstrata e Interface](./14-heranca-polimorfismo-abstracao-interface/)
 
