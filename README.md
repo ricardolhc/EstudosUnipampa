@@ -32,7 +32,7 @@ O repositório está dividido em pastas, onde cada pasta é abordado um novo ass
 
 ### [13. Classes, Objetos, Atributos e Métodos](./13-arquivos)
 
-### [14. Herança, Polimorfismo, Classe Abstrata e Interface](./14-heran%C3%A7a-polimorfismo-abstracao-interface/)
+### [14. Herança, Polimorfismo, Classe Abstrata e Interface](./14-heranca-polimorfismo-abstracao-interface/)
 
 ### [15. Trabalho em Grupo](https://github.com/ricardolhc/POO.git)
 
